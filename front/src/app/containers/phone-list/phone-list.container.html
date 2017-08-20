@@ -2,7 +2,7 @@
   phone-list works!
 </p>
 <ul>
-  <li *ngFor="let phone of phones">
+  <li *ngFor="let phone of phones$ | async">
     <app-phone-detail [phone]="phone"></app-phone-detail>
   </li>
 </ul>

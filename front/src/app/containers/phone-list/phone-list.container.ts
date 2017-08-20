@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Store } from '@ngrx/store';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-phone-list',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhoneListContainer implements OnInit {
 
-  phones: Array<Object> = [{name: 'eip'}, {name: 'yep'}];
+  phones$: Observable<any>;
 
-  constructor() { }
+  constructor(private store: Store<any>) {
+      this.phones$ = store.select('ids');
+  }
 
   ngOnInit() {
   }
