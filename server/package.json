@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "repository": {},
+  "author": "Iván Rodriguez <frivanrodriguez@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint": "eslint **/*.js"
+  },
+  "engines": {
+    "node": ">=7.6.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.5.0",
+    "eslint-plugin-node": "^5.1.1"
+  },
+  "dependencies": {
+    "kcors": "2",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.0.1",
+    "koa-router": "^7.2.1",
+    "minilog": "^3.1.0"
+  }
+}
