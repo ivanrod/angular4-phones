@@ -1,3 +1,9 @@
 <p>
   phone-list works!
 </p>
+<ul>
+  <li *ngFor="let phone of phones">
+    <app-phone-detail [phone]="phone"></app-phone-detail>
+  </li>
+</ul>
+<div class="spinner"></div>

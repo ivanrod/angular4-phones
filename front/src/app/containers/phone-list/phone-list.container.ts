@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhoneListContainer implements OnInit {
 
+  phones: Array<Object> = [{name: 'eip'}, {name: 'yep'}];
+
   constructor() { }
 
   ngOnInit() {
